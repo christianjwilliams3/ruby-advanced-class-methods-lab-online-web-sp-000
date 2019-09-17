@@ -16,11 +16,15 @@ class Song
     s
   end
   
-    def self.new_by_name(string_name_of_the_song)
+  def self.new_by_name(string_name_of_the_song)
     s = self.new 
     s.name = string_name_of_the_song
     s
   end 
+  
+  def self.find_by_name(string_name_of_the_song) 
+    self.all.detect {|i| i.name == string_name_of_the_song}
+  end
 
   def self.all
     @@all
