@@ -3,8 +3,6 @@ class Song
   @@all = []
   
   def self.create 
-    # initializes a song and saves it to the @@all class variable 
-    # either literally or through the class method
     s = self.new 
     s.save 
     s
