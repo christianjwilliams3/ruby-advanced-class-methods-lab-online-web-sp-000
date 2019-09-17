@@ -4,6 +4,7 @@ class Song
   @@all = []
   
   def self.create
+    s=self
 
   def self.all
     @@all
