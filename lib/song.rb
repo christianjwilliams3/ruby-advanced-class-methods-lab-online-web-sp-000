@@ -8,6 +8,8 @@ class Song
     s.save
     s 
   end
+  
+  
 
   def self.all
     @@all
