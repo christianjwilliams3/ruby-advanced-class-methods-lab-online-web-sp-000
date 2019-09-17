@@ -11,13 +11,10 @@ class Song
   end 
  
   def self.create_by_name(string_name_of_the_song)
-    # takes in the string name of a song and returns a 
-    # song instance with that name set as its name property 
     s = self.new 
     s.name = string_name_of_the_song
     s.save 
     s
-    # and the song being saved into the @@all class variable.
   end
  
   def self.new_by_name(string_name_of_the_song)
